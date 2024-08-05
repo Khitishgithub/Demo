@@ -1,0 +1,119 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: 1px solid #f1ecec;
+ margin-left: 70px;
+ margin-right: 70px;
+}
+
+.navbar {
+  padding: 10px; 
+}
+
+
+
+
+
+.main-content {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+
+.hero {
+  flex: 1;
+  margin-top: 20px;
+  width: 500px; 
+  height: 556px; 
+  background-image: url('card.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; 
+}
+
+.hero-content {
+  text-align: center;
+  padding: 20px;
+ 
+  border-radius: 10px;
+}
+
+.hero h1 {
+ 
+  margin-bottom: 20px;
+}
+
+
+
+.slider {
+  flex: 1;
+  min-width: 200px; 
+  padding: 20px;
+}
+
+.slider-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  overflow: hidden;
+}
+
+
+
+@media (max-width: 768px) {
+  .slider-container {
+    grid-template-columns: 1fr; 
+  }
+  .line{
+    display: none;
+  }
+  .header{
+    border: none;
+  }
+  .hero{
+    margin-top: 60px;
+    max-width: 550px;
+  }
+}
+
+ .hero-content{
+  font-size: 62px;
+}
+
+h1 img{
+  height:30px;
+  width:30px;
+}
+
+.line {
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
